@@ -23,7 +23,18 @@ body {
     background-color: var(--primary-white-color);
     color: var(--primary-text-color) ;
 }
-
+h1, h2, h3, h4, p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+ul, ol {
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 0;  
+}
+img {
+    display: block;
+}
 button {cursor: pointer;}
 
 .logo {
@@ -258,3 +269,10 @@ color: var(--primary-white-color);
     color: rgba(255, 255, 255, 0.6);  
 }
 
+/* оформление блоков */
+.logo {
+    padding-top: 24px;
+    padding-left: 215px;
+    padding-bottom: 25px;
+    padding-right: 1240px;
+}

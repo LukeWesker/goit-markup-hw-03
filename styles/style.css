@@ -96,9 +96,14 @@ color: var(--primary-text-color);
     margin-right: auto;
 }
 .site-address {
-    display: inline-block;
+    display: flex;
     column-gap: 50px;
     margin-left: auto;
+}
+.site-address-foot {
+    display: inline-block;
+    margin-left: auto;
+    padding-left: auto;
 }
 .site-nav .link.current {
 color: var(--acent-color);
@@ -159,6 +164,11 @@ border-radius: 4px;
         background-color: var(--acent-color);
         color: var(--primary-white-color);
     }
+.button-nav {
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+}
 
 /* main */
 .main-text {
@@ -308,6 +318,7 @@ color: var(--primary-white-color);
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);  
+    margin-left: auto;
 }
 /* оформление блоков */
 
@@ -331,6 +342,7 @@ color: var(--primary-white-color);
 }
 .main-portfolio {
     display: flex;
-    justify-content: space-between;
     flex-wrap: wrap;
+    gap: 30px;
+    padding-left: 0%;
 }

@@ -13,31 +13,39 @@
 </head>
 <body>
     <!--Шапка сайта-->
-    <header>
-      <nav>
+    
+    <header class="container">
+    <div class="container page-header-container">
+    <nav class="site-nav">
         <a lang="en" href="./index.html " class="logo link"><span class="web-logo">Web</span>Studio</a>
-        <ul class="site-nav">
-            <li><a href="" class="link current">Cтудія</a></li>
-            <li><a href="./portfolio.html" class="link">Портфоліо</a></li>
-            <li><a href="" class="link">Контакти</a></li>
+        <ul class="site-nav page-header-container">
+            <li class="menu-item"><div class=""><a href="" class="link current">Cтудія</a></div></li>
+            <li class="menu-item"><div class=""><a href="./portfolio.html" class="link">Портфоліо</a></div></li>
+            <li class="menu-item"><a href="" class="link">Контакти</a></li>
         </ul>
-        <ul class="site-address">
-            <li><a href="mailto:info@devstudio.com" class="link">info@devstudio.com</a></li>
-            <li><a href="tel:+380961111111" class="link">+38 096 111 11 11</a></li>
+    </nav>
+    <div>
+        <ul class="site-address page-header-container">
+            <li class="menu-address"><a href="mailto:info@devstudio.com" class="link">info@devstudio.com</a></li>
+            <li class="menu-address"><a href="tel:+380961111111" class="link">+38 096 111 11 11</a></li>
         </ul>
-      </nav>
-    </header>   
+    </div>  
+    </div> 
+    </header>  
+   
     <!--Основной блок-->
     <main>
         <!--Баннер-->
-        <section class="main-header">
-            <h1><span class="main-text">Ефективні рішення для вашого бізнесу</span></h1>
+        <section class="main-header page-main-bg">
+        <div class="container">
+            <h1><span class="main-text container">Ефективні рішення для вашого бізнесу</span></h1>
             <button type="button" class="modal-button">Замовити послугу</button>
+        </div>
         </section>
         <!--Преимущества-->
-        <section>
+        <section class="container">
             <h2 class="visually-hidden">Особливості</h2>
-            <ul>
+            <ul class="main-flex">
                 <li>
                     <h3 class="caption-main">УВАГА ДО ДЕТАЛЕЙ</h3> 
                     <p class="paragraph">Ідейні міркування, і навіть початок повсякденної роботи з формування позиці.</p>  
@@ -57,17 +65,17 @@
             </ul>
         </section>
     <!--Наша команда/примеры работ-->
-    <section>
+    <section class="container">
             <h2 class="main-work">Чим ми займаємося</h2>
-            <ul>
+            <ul class="work-list">
                 <li><img src="images/box1.jpg" alt="программування" width="370"></li>
                 <li><img src="images/box2.jpg" alt="налаштування" width="370"></li>
                 <li><img src="images/box3.jpg" alt="графічний дизайн" width="370"></li>
             </ul>
     </section>
-    <section class="main-team">
+    <section class="main-team container">
             <h2 class="team">Наша команда</h2>
-            <ul>
+            <ul class="team-list">
                 <li class="frame-link">
                     <img src="images/igor.jpg" alt="дизайнер продукту" width="270">
                     <h3 class="team-staff-igor">Ігор Дем'яненко</h3>
@@ -93,6 +101,7 @@
     </main>
     <!--Адресс-->
     <footer class="footer">
+    <div class="container">
         <a lang="en" href="./index.html" class="logo link"><span class="web-logo">Web</span><span class="web-logo-foot">Studio</span></a>
         <address>
         <ul class="site-address">
@@ -101,7 +110,9 @@
         <li><a href="tel:+380991111111" class="footer-address link">+38 099 111 11 11</a></li>
         </ul>
         </address>
+    </div>
     </footer>
+    
 </body>
 </html>
 

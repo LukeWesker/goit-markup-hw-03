@@ -58,17 +58,15 @@ margin-top: 25px;
 }
 /* Разметка сайта */
 .container {
-width: 1230px;
-margin-left: auto;
-margin-right: auto;
-outline: 2px solid #188CE8;
-padding-left: 15px;
-padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 .page-header-container {
     display: flex;
     align-items: center;
-    justify-content: space-between;
 }
 .page-header-bg {
 background-color: var(--primary-white-color);
@@ -86,10 +84,7 @@ background-color: var(--primary-white-color);
     align-items: center;
     margin-left: auto;
 }
-.menu-address {
-    margin-right: 50px;
-    margin-left: auto;
-}
+
 /*   Навигация сайта */
 .site-nav a
 {
@@ -101,10 +96,9 @@ color: var(--primary-text-color);
     margin-right: auto;
 }
 .site-address {
-    display: flex;
+    display: inline-block;
     column-gap: 50px;
-    margin-right: auto;
-    justify-content: space-between;
+    margin-left: auto;
 }
 .site-nav .link.current {
 color: var(--acent-color);
@@ -136,7 +130,10 @@ font-family: 'Roboto';
 font-weight: 700;
 font-size: 16px;
 line-height: 1.87;
-display: flex;
+display: inline-block;
+min-width: 216px;
+margin-top: 40px;
+padding: 10px 32px;
 align-items: center;
 text-align: center;
 letter-spacing: 0.06em;
@@ -176,6 +173,8 @@ color: var(--primary-white-color);
 .main-header {
 text-align: center;
 background-color: var(--primary-bg-color);
+padding-top: 200px;
+padding-bottom: 280px;
 }
 .main-work {
 font-weight: 700;
@@ -183,8 +182,9 @@ font-size: 36px;
 line-height: 1.16;
 text-align: center;
 letter-spacing: 0.03em;
-
 color: var(--primary-text-color);
+margin-top: 120px;
+margin-bottom: 50px;
 }
 
 /* Преимущества */
@@ -207,6 +207,7 @@ line-height: 1.14;
 letter-spacing: 0.03em;
 text-transform: uppercase;
 color: var(--primary-text-color);
+margin-bottom: 10px;
 }
 .caption-portfolio {
     font-weight: 700;
@@ -228,6 +229,11 @@ letter-spacing: 0.03em;
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--secondary-text-color);
+    padding-bottom: 30px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
 }
 .paragraph-portfolio {
 font-size: 16px;
@@ -247,14 +253,16 @@ color: var(--secondary-text-color);
     line-height: 1.16;
     text-align: center;
     letter-spacing: 0.03em;
-    
     color: var(--primary-text-color);
+    padding-top: 95px;
+    margin-bottom: 50px;
     }
 /* Наша команда  */
 .frame-link {
     background: var(--main-bg-color);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
+    margin-bottom: 95px;
     }
     
 .team-staff-igor {
@@ -268,36 +276,16 @@ color: var(--primary-text-color);
 background: var(--primary-white-color);
 
 }
-.team-staff-olga {
+.team-item {
     font-weight: 500;
     font-size: 16px;
-    line-height: 1.18;
+    line-height: 1.19;
     text-align: center;
-    letter-spacing: 0.03em;
+    margin-bottom: 10px;
+    margin-top: 30px;
     
     color: var(--primary-text-color);
-    background: var(--primary-white-color);
-}
-.team-staff-mikola {
-font-weight: 500;
-font-size: 16px;
-line-height: 1.18;
-
-text-align: center;
-letter-spacing: 0.03em;
-
-color: var(--primary-text-color);
-background: var(--primary-white-color);
-}
-.team-staff-mihail {
-font-weight: 500;
-font-size: 16px;
-line-height: 1.18;
-text-align: center;
-letter-spacing: 0.03em;
-
-color: var(--primary-text-color);
-background: var(--primary-white-color);
+    background: var(--primary-white-color); 
 }
 
 /* Подвал */
@@ -321,7 +309,6 @@ color: var(--primary-white-color);
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);  
 }
-
 /* оформление блоков */
 
  /* flex */
@@ -334,9 +321,16 @@ color: var(--primary-white-color);
     display: flex;
     column-gap: 30px;
     justify-content: center;
+    margin-bottom: 95px;
 }
 .main-flex {
     display: flex;
     column-gap: 30px;
     justify-content: center; 
+    margin-top: 95px;
+}
+.main-portfolio {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }

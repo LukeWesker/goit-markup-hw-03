@@ -48,6 +48,7 @@ line-height: 1.19;
 letter-spacing: 0.03em;
 margin-left: auto;
 margin-top: 25px;
+margin-right: 94px;
 }
 .web-logo {
     color: var(--acent-color);
@@ -79,6 +80,7 @@ background-color: var(--primary-white-color);
     letter-spacing: 0.02em;
     align-items: center;
     margin-left: auto;
+
 }
 .line-bg {
     width: 1200px;

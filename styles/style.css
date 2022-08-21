@@ -134,7 +134,8 @@ color: var(--primary-text-color);
 ul {list-style: none;}
 .link {text-decoration: none;}
 
-.menu-address {
+.menu-address .link {
+    display: block;
     padding-top: 32px;
     padding-bottom: 32px;
 }

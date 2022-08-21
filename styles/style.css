@@ -106,9 +106,6 @@ color: var(--primary-text-color);
     padding-left: auto;
     margin-bottom: 9px;
 }
-.tel {
-    padding-bottom: 60px;
-}
 .site-nav .link.current {
 color: var(--acent-color);
 }
@@ -135,6 +132,7 @@ color: var(--primary-text-color);
 }
 ul {list-style: none;}
 .link {text-decoration: none;}
+
 .menu-address {
     padding-top: 32px;
     padding-bottom: 32px;
@@ -248,13 +246,16 @@ margin-bottom: 10px;
     line-height: 2;
     letter-spacing: 0.06em;
     color: var(--primary-text-color);
-    margin-top: 20px;
     margin-bottom: 8px;
-    margin-left: 24px;
 }
 .portfolio-item {
 background: #FFFFFF;
 border: 1px solid #EEEEEE;
+}
+.portfolio-text-block {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 24px;
 }
 /* Paragraph */
 .paragraph {
@@ -280,8 +281,6 @@ font-size: 16px;
 line-height: 1.87;
 letter-spacing: 0.03em;
 color: var(--secondary-text-color);
-margin-left: 24px;
-margin-bottom: 20px;
 }
 /*------------------------------------------------- team ---------------------------------------------*/
 .main-team {
@@ -334,10 +333,11 @@ background: var(--primary-white-color);
     margin-left: auto;
     padding-inline-start: 0;
     margin-bottom: 20px;
-    padding-top: 60px;
 }
 .footer {
 background: var(--primary-bg-color);
+padding-top: 60px;
+padding-bottom: 60px;
 }
 .web-logo-foot {
     color: var(--primary-white-color)

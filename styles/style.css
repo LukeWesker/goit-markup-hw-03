@@ -34,6 +34,9 @@ ul, ol {
     margin-left: 0;  
     padding-inline-start: 0;
 }
+li {
+    margin-bottom: 9px;
+}
 img {
     display: block;
 }
@@ -46,9 +49,9 @@ font-weight: 700;
 font-size: 26px;
 line-height: 1.19;
 letter-spacing: 0.03em;
-margin-left: auto;
-margin-top: 25px;
-margin-right: 94px;
+margin-right: 93px;
+padding-top: 24px;
+padding-bottom: 25px;
 }
 .web-logo {
     color: var(--acent-color);
@@ -57,7 +60,7 @@ margin-right: 94px;
 .container {
     margin-left: auto;
     margin-right: auto;
-    width: 1230px;
+    width: 1200px;
     padding-left: 15px;
     padding-right: 15px;
 }
@@ -71,8 +74,6 @@ background-color: var(--primary-white-color);
 
 .menu-item {
     display: flex;
-    padding-top: 32px;
-    padding-bottom: 32px;
     color: var(--primary-text-color);
     font-weight: 500;
     font-size: 14px;
@@ -81,6 +82,10 @@ background-color: var(--primary-white-color);
     align-items: center;
     margin-left: auto;
 
+}
+.menu-item .link {
+    padding-top: 32px;
+    padding-bottom: 32px;
 }
 .line-bg {
     width: 1200px;
@@ -104,8 +109,8 @@ color: var(--primary-text-color);
 .site-address-foot {
     display: inline-block;
     margin-left: auto;
-    padding-left: auto;
-    margin-bottom: 9px;
+    padding-left: auto; 
+
 }
 .site-nav .link.current {
 color: var(--acent-color);
@@ -190,11 +195,14 @@ border: 1px solid transparent;
     display: flex;
     gap: 8px;
     justify-content: center;
-    padding-top: 100px;
+    margin-bottom: 50px;
 }
 
 /*----------------------------------------------- main ------------------------------------------ */
 .main-text {
+    width: 696px;
+    margin-left: auto;
+    margin-right: auto;
 font-weight: 900;
 font-size: 44px;
 line-height: 1.36;
@@ -207,19 +215,20 @@ color: var(--primary-white-color);
 text-align: center;
 background-color: var(--primary-bg-color);
 padding-top: 200px;
-padding-bottom: 280px;
+padding-bottom: 200px;
 }
 .main-work {
-font-weight: 700;
 font-size: 36px;
 line-height: 1.16;
 text-align: center;
 letter-spacing: 0.03em;
 color: var(--primary-text-color);
-margin-top: 120px;
 margin-bottom: 50px;
 }
-
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
 /*--------------------------------------- Преимущества / Portfolio --------------------------------------------*/
 .visually-hidden {
     position: absolute;
@@ -248,16 +257,17 @@ margin-bottom: 10px;
     line-height: 2;
     letter-spacing: 0.06em;
     color: var(--primary-text-color);
-    margin-bottom: 8px;
+    margin-bottom: 4px;
 }
 .portfolio-item {
 background: #FFFFFF;
-border: 1px solid #EEEEEE;
+
 }
 .portfolio-text-block {
     padding-top: 20px;
     padding-bottom: 20px;
     padding-left: 24px;
+    border: 1px solid #EEEEEE;
 }
 /*-------------------------------- Paragraph-------------------------------------- */
 .paragraph {
@@ -272,7 +282,7 @@ letter-spacing: 0.03em;
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--secondary-text-color);
-    padding-bottom: 30px;
+    margin-bottom: 30px;
     font-weight: 400;
     font-size: 16px;
     line-height: 1.19;
@@ -288,7 +298,9 @@ color: var(--secondary-text-color);
 .main-team {
     background-color: var(--secondary-bg-color);   
     }
-    
+ .team-main {
+    padding-top: 0%;
+ }   
 .team {
     font-weight: 700;
     font-size: 36px;
@@ -304,7 +316,6 @@ color: var(--secondary-text-color);
     background: var(--main-bg-color);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
-    margin-bottom: 95px;
     }
     
 .team-staff-igor {
@@ -375,13 +386,11 @@ color: var(--primary-white-color);
     display: flex;
     column-gap: 30px;
     justify-content: center;
-    margin-bottom: 95px;
 }
 .main-flex {
     display: flex;
     column-gap: 30px;
     justify-content: center; 
-    margin-top: 95px;
     flex-basis: calc((100%-90px) / 4);
 }
 .main-portfolio {
@@ -389,8 +398,6 @@ color: var(--primary-white-color);
     flex-wrap: wrap;
     padding-left: 0%;
     flex-basis: calc((100%-180px) / 9);
-    padding-top: 50px;
-    padding-bottom: 95px;
     gap: 30px;
 }
 

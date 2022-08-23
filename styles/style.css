@@ -366,8 +366,8 @@ color: var(--primary-white-color);
     margin-left: auto;
     padding-left: 0;
 }
-.link-padding:not(:last-child) {
-    padding-bottom: 9px;
+.link-margin:not(:last-child) {
+    margin-bottom: 9px;
 
 }
  /* ---------------------------------- flex -----------------------------------------*/

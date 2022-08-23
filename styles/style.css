@@ -223,6 +223,9 @@ margin-bottom: 50px;
     padding-top: 94px;
     padding-bottom: 94px;
 }
+.working-section {
+    padding-top: 0px;
+    }
 /*--------------------------------------- Преимущества / Portfolio --------------------------------------------*/
 .visually-hidden {
     position: absolute;

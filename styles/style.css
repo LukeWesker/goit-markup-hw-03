@@ -34,9 +34,7 @@ ul, ol {
     margin-left: 0;  
     padding-inline-start: 0;
 }
-li {
-    margin-bottom: 9px;
-}
+
 img {
     display: block;
 }
@@ -67,6 +65,7 @@ padding-bottom: 25px;
 .page-header-container {
     display: flex;
     align-items: center;
+    gap: 50px;
 }
 .page-header-bg {
 background-color: var(--primary-white-color);
@@ -87,10 +86,7 @@ background-color: var(--primary-white-color);
     padding-top: 32px;
     padding-bottom: 32px;
 }
-.line-bg {
-    width: 1200px;
-    align-items: center;
-}
+
 /*--------------------------------------   Навигация сайта  ----------------------------------- */
 .site-nav a
 {
@@ -98,8 +94,6 @@ color: var(--primary-text-color);
 }
 .site-nav {
     display: flex;
-    column-gap: 50px;
-    margin-right: auto;
 }
 .site-address {
     display: flex;
@@ -298,9 +292,7 @@ color: var(--secondary-text-color);
 .main-team {
     background-color: var(--secondary-bg-color);   
     }
- .team-main {
-    padding-top: 0%;
- }   
+ 
 .team {
     font-weight: 700;
     font-size: 36px;
@@ -308,7 +300,6 @@ color: var(--secondary-text-color);
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--primary-text-color);
-    padding-top: 95px;
     margin-bottom: 50px;
     }
 /* Наша команда  */
@@ -375,7 +366,10 @@ color: var(--primary-white-color);
     margin-left: auto;
     padding-left: 0;
 }
+.link-padding:not(:last-child) {
+    padding-bottom: 9px;
 
+}
  /* ---------------------------------- flex -----------------------------------------*/
  .team-list {
     display: flex;
